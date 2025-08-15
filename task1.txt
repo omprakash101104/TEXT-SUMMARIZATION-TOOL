@@ -1,0 +1,56 @@
+🛠 Requirements
+Install required libraries using:
+
+bash
+Copy
+Edit
+pip install transformers torch
+
+
+
+# text_summarizer.py
+
+from transformers import pipeline
+
+def summarize_text(text, max_length=130, min_length=30):
+    # Load the summarization pipeline
+    summarizer = pipeline("summarization")
+    
+    # Generate the summary
+    summary = summarizer(text, max_length=max_length, min_length=min_length, do_sample=False)
+    return summary[0]['summary_text']
+
+if __name__ == "__main__":
+    print("=== TEXT SUMMARIZATION TOOL ===\n")
+    
+    # Example input text (you can replace this with any article)
+    input_text = """
+    Artificial Intelligence (AI) is rapidly transforming the world across various sectors including healthcare,
+    education, finance, and transportation. Its capabilities to process large volumes of data and extract meaningful
+    insights are driving innovation and efficiency. In healthcare, AI helps diagnose diseases more accurately, while
+    in education, personalized learning paths are made possible. AI in finance offers fraud detection and algorithmic
+    trading, enhancing security and performance. As AI continues to evolve, ethical concerns regarding data privacy,
+    job displacement, and algorithmic bias are increasingly important to address.
+    """
+
+    # Show input
+    print("Original Article:\n", input_text)
+    
+    # Get and display summary
+    print("\n--- Generated Summary ---")
+    summary = summarize_text(input_text)
+    print(summary)
+
+
+
+
+
+✅ Deliverable Summary
+📜 Script: text_summarizer.py
+
+🧠 Uses transformers pipeline
+
+🧾 Accepts any long article
+
+🧬 Returns concise summary
+
