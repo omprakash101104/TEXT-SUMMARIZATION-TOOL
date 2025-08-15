@@ -84,3 +84,5 @@ Provides quick overviews for decision-making.
 Conclusion
 
 This Text Summarization Tool demonstrates the power of NLP to make information consumption more efficient. By applying preprocessing, word frequency analysis, and extractive summarization, it provides users with a quick, relevant, and concise version of lengthy content. The project not only showcases practical NLP techniques but also forms a foundation for more advanced summarization systems that can be integrated into real-world applications like chatbots, search engines, and document analysis platforms.
+
+<img width="533" height="102" alt="Image" src="https://github.com/user-attachments/assets/c98fcfc1-94e6-4622-a0e5-0d681d4ac829" />
